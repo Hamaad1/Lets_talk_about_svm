@@ -1,12 +1,13 @@
-This repository has two folders
-1. practicing_runmethod
-   Here i am trying do exaustive testing of SVR to find the best parameters based on the minimum error based on MultiOutputRegressor()
-   User have to run the runmethod file and follow the instruction,
-   Currently it has two options, either type the name of the dataset to proceed individualy, or type "all" to process all the datasets
-2. practicing_runmethod_SSVR
-   Here i am trying do exaustive testing of SVR to find the best parameters based on the minimum error based on individual SVR training for each label.
-   User have to run the runmethod file and follow the instruction,
-   Currently it has two options, either type the name of the dataset to proceed individualy, or type "all" to process all the datasets
 
-   Still the work is in process for furtehr exploration
+Here’s a polished version of your text:
+
+This repository contains two folders:
+
+1. practicing_runmethod:
+In this folder, I am conducting exhaustive testing of Support Vector Regression (SVR) to identify the optimal parameters that yield the minimum error using MultiOutputRegressor(). Users should run the runmethod file and follow the instructions provided. Currently, there are two options: you can either type the name of a specific dataset to process it individually or type "all" to process all datasets at once.
+
+2. practicing_runmethod_SSVR:
+This folder also focuses on exhaustive testing of SVR, but it aims to find the best parameters based on the minimum error from individual SVR training for each label. Similar to the first folder, users should run the runmethod file and follow the instructions. The same two options are available: you can enter the name of a specific dataset or type "all" to process all datasets.
+
+Please note that this work is still in progress for further exploration.
    

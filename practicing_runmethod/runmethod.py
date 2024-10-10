@@ -3,7 +3,9 @@ import sys
 import tensorflow as tf
 import numpy as np
 
-sys.path.append('/mnt/c/Users/hamaa/OneDrive - Università degli Studi di Catania/PHD code/transformer_practice/University_valencia_IP/Lets_talk_about_svm/practicing_runmethod')
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(os.path.join(current_dir, 'practicing_runmethod'))
 
 from preprocessing import process_datasets, minmaxscaler
 from configuration1 import runSVR
@@ -92,9 +94,9 @@ config5 = {
 # Now update your main function
 def main():
     # Define your directories
-    data_directory = '/mnt/c/Users/hamaa/OneDrive - Università degli Studi di Catania/PHD code/transformer_practice/University_valencia_IP/Lets_talk_about_svm/practicing_runmethod/datasets'
-    results_directory = '/mnt/c/Users/hamaa/OneDrive - Università degli Studi di Catania/PHD code/transformer_practice/University_valencia_IP/lets_talk_about_svm/practicing_runmethod'
-
+    data_directory = os.path.join(current_dir, 'practicing_runmethod', 'datasets')
+    results_directory = os.path.join(current_dir, 'practicing_runmethod', 'results')
+    
     # Prompt user to select a configuration
     print("Select a configuration:")
     print("1: Configuration 1 (runSVR)")

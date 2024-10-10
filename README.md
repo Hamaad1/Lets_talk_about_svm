@@ -1,5 +1,4 @@
 
-Here’s a polished version of your text:
 
 This repository contains two folders:
 

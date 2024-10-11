@@ -11,9 +11,8 @@ import tensorflow as tf
 import numpy as np
 # Get the current file's directory
 current_dir = os.path.dirname(os.path.abspath(__file__))
-
-# Update the system path to include the 'practicing_runmethod' directory
-sys.path.append(os.path.join(current_dir, 'MultiOutput_SVR'))
+# Move up one level to the parent directory ('Lets_talk_about_svm')
+parent_dir = os.path.abspath(os.path.join(current_dir, '..'))
 
 from preprocessing import process_datasets
 from configuration1 import runSVR
@@ -165,8 +164,11 @@ config9 = {
 def main():
     # Define your directories
 
-    data_directory = os.path.join(current_dir, 'MultiOutput_SVR', 'datasets')
-    results_directory = os.path.join(current_dir, 'MultiOutput_SVR', 'results')
+    # Path to the 'datasets' folder in the parent directory
+    data_directory = os.path.join(parent_dir, 'datasets')
+    
+    # Path to the 'results' folder in the current directory
+    results_directory = os.path.join(current_dir, 'results')
 
     # Prompt user to select a configuration
     print("Select a configuration:")

@@ -43,7 +43,6 @@ config1 = {
 
 }
 
-#this should be the configuration 2, compare kernels with default values
 config2 = {
     'C': 1.0,
     'kernel': ['rbf', 'linear', 'poly', 'sigmoid'],
@@ -72,7 +71,7 @@ config3 = {
     'base_names': base_names,
 }
 
-#this should be 3, comparing kernels with different gama values
+
 config4 = {
     'C': 1.0,
     'kernel': ['rbf', 'linear', 'poly', 'sigmoid'],
@@ -86,7 +85,8 @@ config4 = {
     'max_iter': max_iter,
     'base_names': base_names,
 }
-#comparing kerneal with different degree and beta values as well
+
+
 config5 = {
     'C': 1.0,
     'kernel': ['rbf', 'linear', 'poly', 'sigmoid'],
@@ -100,7 +100,8 @@ config5 = {
     'max_iter': max_iter,
     'base_names': base_names,
 }
-#this should be 4th config comparing kernels with different gamma, degree and beta values
+
+
 config6 = {
     'C':1.0,
     'kernel': ['rbf', 'linear', 'poly', 'sigmoid'],
@@ -115,7 +116,6 @@ config6 = {
     'base_names': base_names,
 }
 
-#this should be 4th config comparing kernels with different gamma, degree and beta values and tolerance
 config7 = {
     'C':1.0,
     'kernel': ['rbf', 'linear', 'poly', 'sigmoid'],
@@ -130,7 +130,6 @@ config7 = {
     'base_names': base_names,
 }
 
-# this should be the 5th config here i am comparing everything with eachother except c
 config8 = {
     'C': 1.0,
     'kernel': ['rbf', 'linear', 'poly', 'sigmoid'],

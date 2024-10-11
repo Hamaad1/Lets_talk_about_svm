@@ -1,0 +1,2 @@
+Dataset,C,Best kernel,Best Degree,Best gamma,Best Beta,Best Epsilon,Best Split,Best Tol,Error Val,Testing error
+DSI1,1.0,rbf,,scale,,0.001,0.1,,4.99142,6.38564

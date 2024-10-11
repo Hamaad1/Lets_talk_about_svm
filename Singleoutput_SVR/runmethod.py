@@ -1,4 +1,4 @@
-#lis tof parameters used by different kernels
+#list of parameters used by different kernels
 
 # Linear: C, epsilon, tol, max_iter
 # Polynomial: C, epsilon, degree, gamma, coef0, tol, max_iter
@@ -12,9 +12,8 @@ import numpy as np
 
 # Get the current file's directory
 current_dir = os.path.dirname(os.path.abspath(__file__))
-
-# Update the system path to include the 'practicing_runmethod' directory
-sys.path.append(os.path.join(current_dir, 'Singleoutput_SVR'))
+# Move up one level to the parent directory ('Lets_talk_about_svm')
+parent_dir = os.path.abspath(os.path.join(current_dir, '..'))
 
 from preprocessing import process_datasets
 from configuration1 import runSVR
@@ -45,7 +44,6 @@ config1 = {
 
 }
 
-#this should be the configuration 2, compare kernels with default values
 config2 = {
     'C': 1.0,
     'kernel': ['rbf', 'linear', 'poly', 'sigmoid'],
@@ -74,7 +72,6 @@ config3 = {
     'base_names': base_names,
 }
 
-#this should be 3, comparing kernels with different gama values
 config4 = {
     'C': 1.0,
     'kernel': ['rbf', 'linear', 'poly', 'sigmoid'],
@@ -88,7 +85,7 @@ config4 = {
     'max_iter': max_iter,
     'base_names': base_names,
 }
-#comparing kerneal with different degree and beta values as well
+
 config5 = {
     'C': 1.0,
     'kernel': ['rbf', 'linear', 'poly', 'sigmoid'],
@@ -102,7 +99,7 @@ config5 = {
     'max_iter': max_iter,
     'base_names': base_names,
 }
-#this should be 4th config comparing kernels with different gamma, degree and beta values
+
 config6 = {
     'C':1.0,
     'kernel': ['rbf', 'linear', 'poly', 'sigmoid'],
@@ -117,7 +114,7 @@ config6 = {
     'base_names': base_names,
 }
 
-#this should be 4th config comparing kernels with different gamma, degree and beta values and tolerance
+
 config7 = {
     'C':1.0,
     'kernel': ['rbf', 'linear', 'poly', 'sigmoid'],
@@ -132,7 +129,7 @@ config7 = {
     'base_names': base_names,
 }
 
-# this should be the 5th config here i am comparing everything with eachother except c
+
 config8 = {
     'C': 1.0,
     'kernel': ['rbf', 'linear', 'poly', 'sigmoid'],
@@ -164,10 +161,10 @@ config9 = {
 
 # Now update your main function
 def main():
-    # Define your directories
-    # Define the relative paths for data and results directories
-    data_directory = os.path.join(current_dir, 'Singleoutput_SVR', 'datasets')
-    results_directory = os.path.join(current_dir, 'Singleoutput_SVR', 'results')
+    # Path to the 'datasets' folder in the parent directory
+    data_directory = os.path.join(parent_dir, 'datasets')
+    # Path to the 'results' folder in the current directory
+    results_directory = os.path.join(current_dir, 'results')
 
     # Prompt user to select a configuration
     print("Select a configuration:")

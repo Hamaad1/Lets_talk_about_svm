@@ -1,13 +1,7 @@
-al the files named as configuration1, configuration2,3,4,5_svm.py are the first verions, 
-configuration5_trying_update.py, here i have made the secuence of the parameters so that i can understand whihc relevant parameter should be slected first and whihc later
-configuration3_svm.py is the test file where i am uing epsiolon_values for the experiments, but dont consider it .just for testing
-configuration_last.py is the initial version of configuration5_trying_update.py
+This repository contains two folders:
 
+MultiOutput_SVR: In this folder, I am conducting exhaustive testing of Support Vector Regression (SVR) to identify the optimal parameters that yield the minimum error using MultiOutputRegressor(). Users should run the runmethod file and follow the instructions provided. Currently, there are two options: you can either type the name of a specific dataset to process it individually or type "all" to process all datasets at once.
 
-Now the second verions wil have new updates, al second versions wil be like, here i am introducing train test split percentages and trying to save error in prolder as well just like above
-moreover, i am trying to save the individual errors for each training iteration , i wil write teh details from the orange notebook and hilighted in meeting on 4-10-2024
+ingleoutput_SVR: This folder also focuses on exhaustive testing of SVR, but it aims to find the best parameters based on the minimum error from individual SVR training for each label. Similar to the first folder, users should run the runmethod file and follow the instructions. The same two options are available: you can enter the name of a specific dataset or type "all" to process all datasets.
 
-configuration1.1.py (it will be trained on three verion of data, original with negative RSSI, positive shifted values RSSI and MinMax scaled values)
-
-configuration2.1.py and so on
-
+Please note that this work is still in progress for further exploration.Lets_talk_about_svm

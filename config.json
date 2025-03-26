@@ -1,0 +1,14 @@
+{
+    "C": [0.1, 1, 10],
+    "kernel": ["linear", "rbf" , "sigmoid", "poly"],
+    "gamma": ["scale", "auto", 0.0001, 0.001, 0.01, 0.1, 1.0, 10, 100],
+    "epsilon": [0.001, 0.01, 0.1, 1.0],
+    "tol": [0.0001, 0.001, 0.01, 0.1],
+    "degree": [2, 3],
+    "coef0": [0, 1, 2,3,4],
+    "max_iter": -1,
+    "train_test_splits": [0.05, 0.1,0.15, 0.2,0.25,0.3,0.35,0.4,0.45,0.5],
+    "repetitions": 10,
+    "base_names": ["DSI1", "DSI2", "LIB1", "LIB2", "MAN1", "MAN2", "SAH1", "SIM001", "TIE1", "TUT1", "TUT2", "TUT3", "TUT4", "TUT5", "TUT6", "TUT7", "UJI1", "UTS1", "GPR00", "GPR01", "GPR02", "GPR03", "GPR04", "GPR05", "GPR06", "GPR07", "GPR08", "GPR09", "GPR10", "GPR11", "GPR12", "GPR13", "SOD01", "SOD02", "SOD03", "SOD04", "SOD05", "SOD06", "SOD07", "SOD08", "SOD09", "UEXB1", "UEXB2", "UEXB3", "UJIB1", "UJIB2"]
+
+}

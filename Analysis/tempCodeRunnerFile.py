@@ -1,0 +1,1 @@
+python getBestParams_cmd_individual.py -fold plainSVRm_2024 -ts 0.2 -DS DSI2 -C 1.0 -K rbf -g scale -e 0.001 -d 3 -t 0.001 -coe 0.0 -rep 2

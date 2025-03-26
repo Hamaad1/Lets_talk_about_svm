@@ -1,0 +1,7 @@
+Steps to Download the Results in VS Code:
+
+Install the required package: pip install magic-wormhole
+
+Use the following command to receive the file: wormhole receive 74-speculate-tactics
+
+Extract the results using: tar -xzvf Results_simulations.tar.gz 
